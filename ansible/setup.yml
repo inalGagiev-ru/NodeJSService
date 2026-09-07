@@ -1,0 +1,6 @@
+---
+- name: Configure NodeJS Server
+  hosts: all
+  become: yes
+  roles:
+    - { role: docker, tags: ['docker'] }
